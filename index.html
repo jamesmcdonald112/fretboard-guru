@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Skip Link -->
-    <a href="#content" class="skip-link">Skip to Main Content</a>
+    <a href="#about" class="skip-link">Skip to Main Content</a>
     <!-- Header -->
     <header>
       <div class="navbar-container">
@@ -27,36 +27,90 @@
           </div>
           <nav>
             <ul>
-              <li>About</li>
-              <li>Blog</li>
-              <li>Contact</li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <main>
-      <section id="about">
+    <!-- MAIN -->
+    <main class="container-main">
+      <!-- ABOUT -->
+      <section id="about" class="about-section">
         <h2>About</h2>
+        <img src="./assets/images/girl-playing-guitar.jpg" />
+        <p>
+          Hi, I'm Jenna, a passionate guitarist and music educator. I've been
+          teaching guitar for over 10 years and specialise in helping students
+          master fingerstyle techniques, barre chords, and improvisation.
+        </p>
+
+        <p>
+          Through this website, I share practical lessons, insightful tips, and
+          easy-to-follow tutorials to help you improve your guitar skills and
+          build confidence in your playing.
+        </p>
+        <button id="contact-btn" class="btn">Get in Touch</button>
       </section>
 
-      <section id="blog">
+      <!-- Blog -->
+      <section id="blog" class="blog-section">
         <h2>Blog</h2>
-        <article>
+        <article class="blog-post">
+          <img src="./assets/images/barre-chords.jpg" alt="" />
           <h3>How to Master Barre Chords</h3>
           <p>Tips for improving your barre chords...</p>
+          <button class="btn">Read More</button>
         </article>
       </section>
 
       <section id="contact">
         <h2>Contact Me</h2>
-        <form></form>
+        <p>
+          Have questions or want to book a lesson? Fill out the form below, and
+          I’ll get back to you soon!
+        </p>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
       </section>
     </main>
-
-    <footer>
-      <p>© 2025 Fretwise. All rights reserved.</p>
-    </footer>
   </body>
 </html>
